@@ -1,0 +1,20 @@
+A docker container based on https://github.com/tphillips/dotNetDockerContainer
+
+List all containers with 
+> sudo docker ps -a
+
+Or 
+sudo docker ps -a | grep servdev
+To just see this image's containers
+
+
+Build and run this image with:
+> sudo docker build -t=tphillips/servdev .
+> sudo docker run -p 8087:80 -t -i tphillips/servdev /bin/bash
+
+One running, init the image with 
+> cd root
+> ./start.sh
+
+Then
+Detatch with ctl+p ctl+q
